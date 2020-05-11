@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Rs</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "red");
+            }, function () {
+                $(this).css("background-color", "magenta");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">RuneScape</h1>
+    </center>
+    <center><img src="rs2.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            RuneScape, sometimes referred to as RuneScape 3, is a fantasy massively multiplayer online role-playing game (MMORPG)
+			developed and published by Jagex, first released in January 2001. RuneScape was originally a browser game built with the Java
+			programming language, but was largely replaced by a standalone C++-coded client in 2016. The game has had over 200 million
+			accounts created and is recognised by the Guinness World Records as the world's largest and most-updated free MMORPG
+            <br>
+            <br>
+            RuneScape takes place in the world of Gielinor, a medieval fantasy realm divided into different kingdoms, regions, and cities.
+			Players can travel throughout Gielinor via a number of methods including on foot, magical spells, or charter ships. Each region offers
+			different types of monsters, resources, and quests to challenge players. The game's fictional universe has also been explored through
+			a tie-in video game on another of its maker's websites, FunOrb, Armies of Gielinor,and the novels Betrayal at Falador,Return to
+			Canifis,and Legacy of Blood.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+            <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+        </div>
+</body>
+
+</html>

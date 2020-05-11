@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Apex</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "red");
+            }, function () {
+                $(this).css("background-color", "magenta");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Apex Legends</h1>
+    </center>
+    <center><img src="apex2.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment and published by Electronic Arts. It was
+			released for Microsoft Windows, PlayStation 4 and Xbox One on February 4, 2019, without any prior announcement or marketing.
+            <br>
+            <br>
+            The gameplay of Apex Legends fuses elements of a variety of video games, including Respawn's own Titanfall series, battle-royale
+			games, class-based shooters, and those with evolving narratives[citation needed]. In each round, approximately sixty players in squads of
+			three will skydive on to an island, with one player controlling where their squad lands. The teams must then scavenge for weapons and
+			equipment in order to fight other players, during which time the play area is gradually constricted in size until only one squad remains
+			and therefore wins the match.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+        <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+    </div>
+</body>
+
+</html>

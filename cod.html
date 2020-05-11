@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Cod</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "red");
+            }, function () {
+                $(this).css("background-color", "magenta");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Call Of Duty</h1>
+    </center>
+    <center><img src="cod2.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            Call of Duty is a first-person shooter video game developed by Infinity Ward and published by Activision. It is the first installment in the
+			Call of Duty franchise,[2] released on October 29, 2003, for Microsoft Windows. The game simulates infantry and combined arms
+			warfare of World War II using a modified version of the id Tech 3 engine. Much of its theme and gameplay is similar to the Medal of
+			Honor series; however, Call of Duty showcases multiple viewpoints staged in the British, American, and Soviet theaters of World War II.
+            <br>
+            <br>
+            The game introduced a new take on AI-controlled allies who support the player during missions and react to situational changes during
+			gameplay. This led to a greater emphasis on squad-based play as opposed to the "lone wolf" approach often portrayed in earlier first
+			-person shooter games. Much of Infinity Ward's development team consisted of members who helped develop Medal of Honor: Allied
+			Assault. The game received critical acclaim and won several Game of the Year awards from reviewers.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+            <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+        </div>
+</body>
+
+</html>

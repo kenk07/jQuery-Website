@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Mine</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "red");
+            }, function () {
+                $(this).css("background-color", "magenta");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Minecraft</h1>
+    </center>
+    <center><img src="hey.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+			Minecraft is a sandbox video game created by Swedish game developer Markus Persson and released by Mojang in 2011. The
+			game allows players to build with a variety of different blocks in a 3D procedurally generated world, requiring creativity from players.
+			Other activities in the game include exploration, resource gathering, crafting, and combat. Multiple game modes that change
+			gameplay are available, including—but not limited to—a survival mode, in which players must acquire resources to build the world
+			and maintain health, and a creative mode, where players have unlimited resources to build with. The Java Edition of the game allows
+			players to modify the game with mods to create new gameplay mechanics, items, textures and assets
+            <br>
+            <br>
+            Minecraft received critical acclaim and won numerous awards, and has since been described as one of the most influential video
+			games in history. Social media, parodies, adaptations, merchandise, and the MineCon convention played large roles in popularizing
+			the game.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+            <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+        </div>
+</body>
+
+</html>

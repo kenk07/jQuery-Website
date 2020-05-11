@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("body").keydown(function () {
+                $("body").css("background-color", "#34421E");
+            });
+            $("body").keyup(function () {
+                $("body").css("background-color", "#C19434");
+            });
+        });
+        $(document).ready(function () {
+            $("#ani").click(function () {
+                $("#ani").animate({ width: "1000px" });
+            });
+            $("#btn2").click(function () {
+                $("#ani").animate({ width: "200px" });
+            });
+        });
+    </script>
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Top 5 Greatest Video Games</h1>
+    </center>
+    <div id="box1">
+        <center><a href="fort.html">
+                <h1>Fortnite</h1>
+            </a></center>
+    </div>
+    <div id="box2">
+        <center><a href="cod.html">
+                <h1>Call Of Duty</h1>
+            </a></center>
+    </div>
+    <div id="box3">
+        <center><a href="rs.html">
+                <h1>Runescape</h1>
+            </a></center>
+    </div>
+    <div id="box4">
+        <center><a href="mc.html">
+                <h1>Minecraft</h1>
+            </a></center>
+    </div>
+    <div id="box5">
+        <center><a href="apex.html">
+                <h1>Apex Legends</h1>
+            </a></center>
+    </div>
+    <div class="bottomright1">
+        <p>Scrolled <span>0</span> times.</p>
+    </div>
+    <center>
+        <h1>Form </h1>
+    </center>
+    <form id="sform">
+        <table width=60% border="2" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="name" id="sname" size=25></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="semail" size=25></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="" id="snum" size=25></td>
+            </tr>
+            <tr>
+                <td>Select the game that you are interested about:</td>
+                <td><select id="sgame">
+                        <option value="Fortnite">Fortnite</option>
+                        <option value="Call Of Duty">Call Of Duty</option>
+                        <option value="Runescape">Runescape</option>
+                        <option value="Minecraft">Minecraft</option>
+                        <option value="Apex Legends">Apex Legends</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td size="55" colspan="2">
+                    <center><input type="submit" value="Submit"></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="test" style="border:2px solid violet;margin-top:20px;"></div>
+    <center>
+        <div id="ani" style="background:#F1F1EF;height:150px;width:150px;margin:6px;text-align:center;">
+                <p>For further information on the the most popular games stay tuned.
+                        <br></p>
+        </div>
+        <button id="btn2">Reset</button>
+    </center>
+</body>
+
+</html>
